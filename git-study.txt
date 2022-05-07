@@ -1,0 +1,55 @@
+Git
+
+​
+
+버전관리 : 프로젝트 상태가 변경되는 정보를 알고 있다는 것
+
+ - Git 은 commit 을 사용해서 버전이 달라지는 것을 관리
+
+​
+
+현재 프로젝트의 상태를 저장하는 것 : commit
+
+commit
+
+ - 누가(author), 언제 commit 했는지의 정보와 프로젝트 변경 내용
+
+- 작업내역이 어떤 것인지 알아볼 수 있게 적는 메시지를 'commit 메시지'
+
+commit 반영은 파일 단위로 선택 가능
+
+commit 에 반영할 파일을 선택하는 것 : add (혹은 staging, 스테이징)
+
+​
+
+commit 한 기록 : history
+
+​
+
+Git으로 관리되는 프로젝트 : repo (repository 리포지토리의 약자)
+
+내 컴퓨터에 저장되어있는 리포지토리 : 로컬 repo(local repository)
+
+Github 처럼 다른 곳에서 접속할 수 있는 공간에 저장되어있는 것 : 원격 repo(remote repository)
+
+​
+
+원격 repo 와 로컬 repo 를 연결해서 내용을 반영하고 싶을 땐 어떤 방법을 써야할까? 
+
+ - 로컬 repo 가 없고 원격 repo 에 있는 내용을 가져오고 싶을 때는 clone 한다.
+
+ - 원격 repo 와 로컬 repo 둘 다 있고 두 개를 연결하고 싶을 때는 로컬 repo 가 원격 repo를 tracking 하도록 설정한다.
+
+​
+
+원격 repo 와 로컬 repo 는 왜 따로 있을까? 
+
+협업할 때, 혹은 여러 컴퓨터를 사용한다면 하나의 원격 repo 에 여러 로컬 repo 를 연결시킬 수 있다. 하나의 프로젝트를 동시에 작업하는게 가능해진다.
+
+​
+
+push : 로컬 repo 의 commit 들을 원격 repo 에 반영하기. 원격 repo 에 없는 즉, 새로운 commit 내역을 모두 원격 repo 에 한 번에 반영
+
+pull : 원격 repo 의 commit 들을 로컬 repo 로 반영하기. 로컬 repo 에 없는 즉, 새로운 commit 내역을 모두 로컬 repo 에 한 번에 반영
+
+clone : 원격 repo 를 내 컴퓨터에 가져와서 초기 repo 세팅하는 것
